@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  padding: 6px 4px;
+  font:
+    bold 16px "Times New Roman",
+    serif;
+  color: #444;
+  background: #eee;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.item:nth-child(even) {
+  background: #e2e2e2;
+}
+.item:hover {
+  color: #00f;
+}
+.active {
+  color: #00f;
+}

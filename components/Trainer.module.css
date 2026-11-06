@@ -1,0 +1,136 @@
+.tabs {
+  display: flex;
+  gap: 2px;
+}
+.tab,
+.tabActive {
+  padding: 6px 8px;
+  font:
+    bold 16px "Times New Roman",
+    serif;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  cursor: pointer;
+}
+.tabActive {
+  background: #f7f7f7;
+}
+.card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 16px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.title {
+  margin: 12px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dde;
+}
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 40px;
+  padding: 8px 0 16px;
+  border-bottom: 1px solid #dde;
+}
+.answer {
+  min-width: 120px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #555;
+}
+.right {
+  background: #c8f2c8;
+  color: #060;
+}
+.wrong {
+  background: #f6c8c8;
+  color: #900;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 475px;
+  gap: 16px;
+  padding: 4px 0;
+  border-bottom: 1px solid #dde;
+}
+.timer {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+}
+.timerFill {
+  height: 100%;
+  transition:
+    width 0.1s linear,
+    background 0.3s;
+}
+.equation {
+  margin-left: 16px;
+}
+.instr {
+  padding: 8px 0;
+}
+.instr li {
+  margin: 10px 0;
+}
+.btnLike {
+  display: inline-block;
+  padding: 1px 6px;
+  font: 13px Arial, sans-serif;
+  background: #efefef;
+  border: 1px solid #767676;
+  border-radius: 3px;
+}
+.demoKeypad {
+  width: 325px;
+  margin: 8px 0;
+}
+.square {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+@media (max-width: 700px) {
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+}
+.info {
+  padding: 28px 16px 0;
+}
+.blue {
+  color: #00f;
+}
+.red {
+  color: #f00;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.keypad button {
+  height: 50px;
+  background: #efefef;
+  border: 1px solid #888;
+  cursor: pointer;
+  font-size: 14px;
+}
+.keypad button:active {
+  background: #ddd;
+}
+.back {
+  grid-column: span 2;
+}
+.startRow {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
